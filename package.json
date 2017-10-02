@@ -4,9 +4,11 @@
   "description": "",
   "main": "change.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "start": "node_modules/.bin/live-server --port=8000" ,  
+      "make_doc": "./node_modules/jsdoc/jsdoc.js change.js",
+      "test": "./node_modules/.bin/istanbul cover test.js"
+
   },
-  "test": "./node_modules/.bin/istanbul cover test.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
