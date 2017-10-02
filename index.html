@@ -17,6 +17,10 @@
     <div id="qunit-fixture"></div>
     <!-- Load the QUnit Testing Framework from CDN - this is the important bit ... -->
     <script src="https://code.jquery.com/qunit/qunit-1.18.0.js"></script>
+    <!-- Load Blanket.js from CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blanket.js/1.1.4/blanket.js"></script>
+	<script src="/change.js" data-cover></script> <!-- load our getChange method  -->
+	<script src="/test.js"></script>              <!-- load tests after getChange -->
     <script>
       // testing the getChange function
       test('getChange(12,400) should be equal to [200, 100, 50, 20, 10, 5, 2, 1]',function(assert){
